@@ -1,0 +1,27 @@
+{
+  "update_id": 957506764,
+  "message": {
+    "message_id": 4096,
+    "from": {
+      "id": 375036391,
+      "is_bot": false,
+      "first_name": "\u0411\u0456\u043f\u0430",
+      "username": "Kurusa",
+      "language_code": "uk"
+    },
+    "chat": {
+      "id": 375036391,
+      "first_name": "\u0411\u0456\u043f\u0430",
+      "username": "Kurusa",
+      "type": "private"
+    },
+    "date": 1600245333,
+    "text": "\u0414\u0440\u0443\u0436\u0431\u0430, \u0421\u0443\u043c\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+    "via_bot": {
+      "id": 1037100490,
+      "is_bot": true,
+      "first_name": "new synoptic bot",
+      "username": "new_synoptic_bot"
+    }
+  }
+}"

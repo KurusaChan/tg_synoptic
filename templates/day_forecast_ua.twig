@@ -1,0 +1,22 @@
+Погода у місті <b>{{ weather.city }}</b>
+
+<b>{{ weather.date }}</b>:
+{{ weather.sinoptik.description }}, від {{ weather.min }}° до {{ weather.max }}°
+<code>
+{% for key, item in weather.data %}
+• {{ item.date }} {{ item.icon }} {{ item.temp }}° {{ item.desc }}
+{% if full_weather %}
+    💨швидкість вітру: {{ item.wind_speed }} м/с
+    💨тиск: {{ item.pressure }} мм
+    ☁️хмарність: {{ item.clouds }}%
+    💧вологість: {{ weather.sinoptik[key].humidity }}%
+    ☁ймовірність опадів: {{ weather.sinoptik[key].rains }}{% if weather.sinoptik[key].rains != '-' %}%{% endif %}
+
+{% endif %}
+{% endfor %}
+</code>
+☀схід: <code>{{ weather.sunrise }}</code> захід: <code>{{ weather.sunset }}</code>
+
+<i>{{ weather.sinoptik.detail }}</i>
+
+{{ weather.sinoptik.url }}
